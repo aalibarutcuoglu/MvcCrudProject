@@ -1,0 +1,54 @@
+﻿
+@{
+    Layout = null;
+}
+
+<!DOCTYPE html>
+
+<html>
+<head>
+    <meta name="viewport" content="width=device-width" />
+    <title>_Layout</title>
+
+    <link href="~/Content/bootstrap.min.css" rel="stylesheet" />
+</head>
+<style>
+   ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  overflow: hidden;
+  background-color: #333;
+}
+
+li {
+  float: left;
+}
+
+li a {
+  display: block;
+  color: white;
+  text-align: center;
+  padding: 14px 16px;
+  text-decoration: none;
+}
+
+/* Change the link color to #111 (black) on hover */
+li a:hover {
+  background-color: #111;
+}
+</style>
+<body>
+    <ul>
+        <li><a href="/Departman/Index">Departman</a></li>
+        <li><a href="/Calisan/Index">Çalışanlar</a></li>
+        <li><a href="/Login/Kaydet">Kayıt Ol</a></li>
+        <li><a href="/Login/Index">Kullanıcı Listesi</a></li>
+    </ul>
+    <div class="container">
+        @RenderBody()
+    </div>
+    <script src="~/scripts/jquery-3.0.0.min.js"></script>
+    <script src="~/scripts/bootstrap.min.js"></script>
+</body>
+</html>
